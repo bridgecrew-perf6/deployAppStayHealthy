@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API = axios.create({baseURL: "http://localhost:9090"});
+const API = axios.create({baseURL: "https://stayhealthycapstoneapp.herokuapp.com"});
 
 export const createDrug = (formData) => API.post("/drugs/createDrug", formData);
 export const getDrugs = () => API.get("/drugs/getDrugs");
