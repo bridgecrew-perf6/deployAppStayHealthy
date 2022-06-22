@@ -20,7 +20,7 @@ const MONGODB_URI = "mongodb+srv://lislelojo:eliaMDB67!@cluster0.37aex.mongodb.n
 
 const PORT = process.env.PORT || 9090;
 
-mongoose.connect(MONGODB_URI, 
+mongoose.connect(process.env.MONGODB_URI, 
    {  useNewUrlParser: true, 
       useUnifiedTopology: true
    })
