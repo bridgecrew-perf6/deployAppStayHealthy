@@ -16,9 +16,8 @@ app.use('/users', userRoutes); //http://localhost:4000/users/signup
 app.use('/drugs', drugRoutes);
 
 // https://www.mpngodb.com/cloud/atlas
-const MONGODB_URI = "mongodb+srv://lislelojo:eliaMDB67!@cluster0.37aex.mongodb.net/drug_db?retryWrites=true&w=majority"
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 9090;
 
 mongoose.connect(process.env.MONGODB_URI, 
    {  useNewUrlParser: true, 
